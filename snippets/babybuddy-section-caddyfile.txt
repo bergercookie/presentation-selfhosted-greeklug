@@ -1,0 +1,14 @@
+babybuddy.srv.bergercookie.dev {
+    @allowed {
+        remote_ip 192.168.33.0/24 192.168.66.0/26
+    }
+    handle @allowed {
+        reverse_proxy grocy
+    }
+    handle {
+        respond "Access denied" 403
+    }
+    tls {
+        dns cloudflare "<YOUR_CLOUDFLARE_API_TOKEN>"
+    }
+}

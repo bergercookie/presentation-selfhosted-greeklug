@@ -1,0 +1,20 @@
+# caddy/docker-compose.yaml
+---
+services:
+  caddy:
+    build: .
+    container_name: caddy
+    networks:
+      - homelab_net
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - "192.168.33.30:80:80"
+      - "192.168.33.30:443:443"
+      - "192.168.33.30:443:443/udp"
+    ...
+    restart: unless-stopped
+
+networks:
+  homelab_net:
+    external: true

@@ -1,0 +1,17 @@
+services:
+  babybuddy:
+    image: lscr.io/linuxserver/babybuddy
+    container_name: babybuddy
+    networks:
+      - homelab_net
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Athens
+      - DEBUG=False
+    volumes:
+      - /home/berger/services/babybuddy/config/:/config
+    restart: unless-stopped
+networks:
+  homelab_net:
+    external: true
