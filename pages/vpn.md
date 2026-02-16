@@ -15,19 +15,58 @@ I'd like to
 
 To do that we
 
-* Use [Wireguard](https://www.wireguard.com/) to create a VPN server at your
-  public-facing VPS server
-* Use <ins>systemd-resolved</ins> for split DNS resolution based on interface
-  (`.af` for VPN, `.lan` for home)
-
+* Use [Tailscale](https://tailscale.com/) to create point-to-point between
+    mobile devices and home network.
+* Self-host [Headscale](https://headscale.net/) for Tailscale control node.
+* Split DNS configuration
   + If at home, resolve *.srv.bergercookie.dev via the homelab router directly.
   + If away, resolve *.srv.bergercookie.dev forward queries from VPN DNS
     resolver to home router.
 
-Alternative:
+---
+hideInToc: true
+transition: none
+---
 
-* [Tailscale](https://tailscale.com/) - easier to set up, but not
-    fully open-source and with restrictions
+# Secure access using [VPN]{style="color: green;"}
+
+<v-click>
+
+## Why use Tailscale (and not WireGuard directly)?
+
+</v-click>
+<v-click>
+
+* Point-to-point communication (no added latency)
+* Easy to add new nodes to the network (no need to exchange private keys)
+* Good tooling to manage nodes, users, and access control (no need for direct
+    iptables usage)
+
+</v-click>
+<v-click>
+
+## Why self-host Headscale (and not use Tailscale's control node)?
+
+</v-click>
+<v-click>
+
+If in the free tier
+
+* Restrictions on the number of users and devices
+* Cannot set ACLs (Access Control Lists) to restrict access to specific nodes
+
+At the same time, we piggyback on Tailscale's apps.
+
+</v-click>
+
+---
+hideInToc: true
+transition: none
+---
+
+# Secure access using [VPN]{style="color: green;"}
+
+<!-- TODO Include diagram of caddy + headscale + headplane -->
 
 ---
 hideInToc: true

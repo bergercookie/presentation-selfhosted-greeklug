@@ -1,3 +1,7 @@
+---
+transition: none
+---
+
 # [Backup]{style="color: green;"} homelab app data
 
 🎯 Let's not lose data in case of a disk failure
@@ -15,15 +19,52 @@
 Mount NFS, store app data on NFS mount
 
 ---
-layout: two-cols-header
-layoutClass: gap-8
 hideInToc: true
+transition: none
 ---
 
 # [Backup]{style="color: green;"} homelab app data
 
-* Backup whole docker data mount, daily, with `systemd.timer`s, systemd service
-    and and bash scripts
+* Use [restic](https://restic.net)
+    + Backup to NAS
+    + Also backup to cloud storage (Google drive) using `rclone` as restic
+        backend
+* Run in docker container, using periodic scheduler in each homelab server
+
+```sh
+for each app; do
+    docker container stop $app
+    restic-backup.sh $app
+    docker container start $app
+done
+```
+
+```toml
+cron_schedule = "0 3 * * *"  # Every day at 3 AM
+run_on_startup = true
+ntfy_send_success_notifications = true
+
+[apps.caddy]
+container_name = "caddy"
+data_dirs = ["caddy/conf", "caddy/site"]
+data_dir_root = "/home/berger/data/service_data/"
+
+...
+```
+
+---
+layout: two-cols-header
+layoutClass: gap-8
+hideInToc: true
+transition: none
+---
+
+# [Backup]{style="color: green;"} homelab app data
+
+Alternative: Use bash script, tar + gpg app data
+
+Backup whole docker data mount, daily, with `systemd.timer`s, systemd service
+and bash scripts
 
 ::left::
 
@@ -32,22 +73,18 @@ hideInToc: true
 ```ini
 [Unit]
 Description=Timer for backing up radicale
-
 [Timer]
 OnCalendar=03:30
 Persistent=false
-
 [Install]
 WantedBy=timers.target
 ```
-
 
 ##### File: /etc/sytemd/system/backup@.service
 
 ```ini
 [Unit]
 Description=%i: Backup data
-
 [Service]
 Type=oneshot
 ExecStart=/home/berger/dotfiles/bash_scripts/backup/backup-%i.sh
@@ -61,7 +98,6 @@ Group=berger
 
 ```bash
 #!/usr/bin/env bash
-
 export APP_NAME="radicale"
 export THIS_SCRIPT_NAME=$(basename ${BASH_SOURCE[0]})
 # export TO_EXCLUDE=""
@@ -87,6 +123,7 @@ hideInToc: true
 ---
 
 # [Backup]{style="color: green;"} homelab app data
+Alternative: Use bash script, tar + gpg app data
 
 List all homelab timers
 

@@ -1,3 +1,7 @@
+---
+transition: none
+---
+
 # High-level [network view]{style="color: green;"}
 
 <div v-click class="flex flex-col items-center">
@@ -21,3 +25,20 @@
 * Firewall rules between zones, the VPN and the internet
 * Leave ISP router intact, connect only to your own router
 -->
+
+---
+layout: two-cols-header
+layoutClass: gap-8
+hideInToc: true
+---
+
+# High-level [network view]{style="color: green;"}
+
+ACLs (Access Control Lists)
+
+* Define at least 3 groups
+  * Family (full access to everything)
+  * Inner friends and family (access to all homelab servers + Homelab router for
+      DNS)
+  * Outer friends (access to specific services (movies, audiobooks), accessed by
+    specific IP + Homelab router for DNS)
