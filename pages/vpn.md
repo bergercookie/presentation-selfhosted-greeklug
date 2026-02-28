@@ -37,10 +37,10 @@ transition: none
 </v-click>
 <v-click>
 
-* Point-to-point communication (no added latency)
+* Point-to-point communication (no added latency, no single point of failure)
 * Easy to add new nodes to the network (no need to exchange private keys)
-* Good tooling to manage nodes, users, and access control (no need for direct
-    iptables usage)
+* Good tooling, UI to manage nodes, users, and apply access control (no need for
+  direct iptables usage)
 
 </v-click>
 <v-click>
@@ -52,7 +52,8 @@ transition: none
 
 If in the free tier
 
-* Restrictions on the number of users and devices
+* Restrictions on the number of users and devices (i.e., cannot give to friends
+    and family)
 * Cannot set ACLs (Access Control Lists) to restrict access to specific nodes
 
 At the same time, we piggyback on Tailscale's apps.
@@ -66,7 +67,16 @@ transition: none
 
 # Secure access using [VPN]{style="color: green;"}
 
-<!-- TODO Include diagram of caddy + headscale + headplane -->
+<div v-click class="flex flex-col items-center">
+<Excalidraw
+  drawFilePath="./drawings/caddy-configuration-p47.json"
+  class="w-[1000px]"
+  :darkMode="true"
+  :background="false"
+/>
+</div>
+
+
 
 ---
 hideInToc: true
