@@ -2,11 +2,6 @@
   "name": "homelab",
   "type": "module",
   "private": true,
-  "scripts": {
-    "build": "slidev build",
-    "dev": "slidev --open",
-    "export": "slidev export"
-  },
   "dependencies": {
     "@iconify-json/logos": "^1.2.10",
     "@iconify-json/unjs": "^1.2.3",

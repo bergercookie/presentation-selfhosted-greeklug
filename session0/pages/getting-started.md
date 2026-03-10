@@ -9,8 +9,8 @@ choice.
 
 This includes:
 
-* Hardware: computer, NAS, router, network setup
-* Software: OS, containerization, reverse proxy, VPN, DNS, apps
+* Hardware: computer, NAS, router, network setup, etc.
+* Software: OS, containerization, reverse proxy, VPN, DNS, apps, etc.
 
 ---
 hideInToc: true
@@ -23,7 +23,7 @@ Describe my current self-hosted setup
 * What tools to use
 * What are the challenges
 * What are some tips to manage your self-hosted setup
-* What apps you could self-host
+* What apps you could self-host / example scenarios
 
 
 <!--
@@ -75,6 +75,8 @@ hideInToc: true
 </v-clicks>
 
 <!--
+* You don't control the T&Cs, they could change the product, shut it down, etc.
+
 * See Notion database exports
 -->
 
@@ -124,16 +126,16 @@ hideInToc: true
 # What do I need?
 
 1. [A computer]{style="color: green;"} to run the services
-   - Alternatives: Raspberry PI, mini-PC NUC-variants,  old laptop
+   - Options: Raspberry PI, mini-PC NUC-variants (e.g., [Lenovo ThinkCentre](https://www.skroutz.gr/s/55659444/Lenovo-ThinkCentre-M910q-Tiny-Refurbished-Grade-A-Core-i5-6400T-4GB-500GB-HDD-No-OS-Repainted.html)),  old laptop
 2. [DNS name]{style="color: green;"}
-   - ~10€/year from Cloudflare(https://www.cloudflare.com/) / [GoDaddy](https://www.godaddy.com/) etc.
+   - Options: Cloudflare(https://www.cloudflare.com/) / [GoDaddy](https://www.godaddy.com/) etc, ~10€/year 
    - Prefer Cloudflare; Alternatively free dynamic DNS from [DuckDNS](https://www.duckdns.org/) (but this is more work)
 3. VPS with [public, static IP]{style="color: green;"}
    - Options: [DigitalOcean](https://www.digitalocean.com/), [Linode](https://www.linode.com/), [Oracle Cloud](https://www.oracle.com/cloud/free/) etc.
    - Prefer Oracle Cloud (Free tier has unlimited egress traffic)
 4. [Dedicated router]{style="color: green;"} hardware
-   - Use [OpenWRT](https://openwrt.org/)
-   - Alternatively use a [Raspberry Pi](https://www.raspberrypi.org/) with [Pi-hole](https://pi-hole.net/)
+   - Options: ISP Router software, [Raspberry Pi](https://www.raspberrypi.org/) with [Pi-hole](https://pi-hole.net/), [OPNsense](https://opnsense.org/), [OpenWRT](https://openwrt.org/)
+   - Prefer OpenWRT
 5. [NAS]{style="color: green;"} for media and backups storage
    - Dedicated hardware, with multiple bays for RAID (e.g., [Synology](https://www.synology.com/) / [QNAP](https://www.qnap.com/))
 

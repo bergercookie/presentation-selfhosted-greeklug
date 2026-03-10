@@ -34,7 +34,7 @@ table, tr, td, th {
   </tr>
   <tr>
     <td><v-click>What if my disk fails?</v-click></td>
-    <td><v-click at="11">Use RAID</v-click></td>
+    <td><v-click at="11">Use RAID / Data redundancy / Full-disk backups</v-click></td>
   </tr>
   <tr>
     <td><v-click>What if I delete something in the app by mistake?</v-click></td>

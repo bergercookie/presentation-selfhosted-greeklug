@@ -11,7 +11,7 @@ transition: none
 
 ## Requirements
 
-* Website not publicly accessible - only at home or via VPN
+* Apps not publicly accessible - only at home or via VPN
 * Consistent access - same name whether at home or via VPN
 
 ---

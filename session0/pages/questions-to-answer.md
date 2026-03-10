@@ -24,7 +24,7 @@ table, tr, td, th {
     <td>Access homelab apps via reverse proxy</td>
   </tr>
   <tr>
-    <td>Have to explicitly prefix with `http://` when accessing from android<br>Can I avoid that?</td>
+    <td>Have to explicitly prefix with `http://` when accessing from android.<br>Can I avoid that?</td>
     <td>Issue SSL certificate</td>
   </tr>
   <tr>
@@ -33,7 +33,7 @@ table, tr, td, th {
   </tr>
   <tr>
     <td>What if my disk fails?</td>
-    <td>Use RAID</td>
+    <td>Use RAID / Data redundancy / Full-disk backups</td>
   </tr>
   <tr>
     <td>What if I delete something in the app by mistake?</td>

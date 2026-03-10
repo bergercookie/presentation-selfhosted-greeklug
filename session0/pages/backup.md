@@ -31,26 +31,28 @@ transition: none
         backend
 * Run in docker container, using periodic scheduler in each homelab server
 
-```sh
-for each app; do
-    docker container stop $app
-    restic-backup.sh $app
-    docker container start $app
-done
-```
+  ```sh
+  for each app; do
+      docker container stop $app
+      restic-backup.sh $app
+      docker container start $app
+  done
+  ```
 
-```toml
-cron_schedule = "0 3 * * *"  # Every day at 3 AM
-run_on_startup = true
-ntfy_send_success_notifications = true
+* Backup configuration
 
-[apps.caddy]
-container_name = "caddy"
-data_dirs = ["caddy/conf", "caddy/site"]
-data_dir_root = "/home/berger/data/service_data/"
+  ```toml
+  cron_schedule = "0 3 * * *"  # Every day at 3 AM
+  run_on_startup = true
+  ntfy_send_success_notifications = true
 
-...
-```
+  [apps.caddy]
+  container_name = "caddy"
+  data_dirs = ["caddy/conf", "caddy/site"]
+  data_dir_root = "/home/berger/data/service_data/"
+
+  ...
+  ```
 
 ---
 layout: two-cols-header

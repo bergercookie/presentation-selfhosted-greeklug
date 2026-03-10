@@ -13,4 +13,4 @@ These are accessible:
 
 On top of that:
 
-* We take regular backups, have redundancy, and can recover 💾
+* We take regular backups, have redundancy, and can recover from failures 💾

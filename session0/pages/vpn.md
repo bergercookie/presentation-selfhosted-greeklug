@@ -43,6 +43,12 @@ transition: none
   direct iptables usage)
 
 </v-click>
+
+## Why _not_ use Tailscale?
+
+* Not trivial to connect to multiple Tailscale networks at the same time (e.g.,
+    work and home)
+
 <v-click>
 
 ## Why self-host Headscale (and not use Tailscale's control node)?
@@ -96,6 +102,6 @@ hideInToc: true
 
 <!--
 
-Use systemd-resovled since it allows for split DNS configuration per interface.
+* Tailscale/headscale allows for split DNS configuration per interface.
 
 -->
