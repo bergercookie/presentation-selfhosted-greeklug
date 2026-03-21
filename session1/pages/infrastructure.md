@@ -1,5 +1,0 @@
----
----
-
-# 🏗️ Homelab infrastructure maintenance
-
