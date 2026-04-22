@@ -15,11 +15,11 @@ transition: none
 
 * Setup new docker network for caddy and apps to share
 
-* When client connects to the `http(s)://<service-name>.<homelab-domain>`
+* When client connects to the `http(s)://<service-name>.homelab.lan`
     caddy reverse-proxies the request to the appropriate app container:
 
-   * `babybuddy.homelab.local` -> `babybuddy` container
-   * `grocy.homelab.local` -> `grocy` container
+   * `babybuddy.homelab.lan` -> `babybuddy` container
+   * `grocy.homelab.lan` -> `grocy` container
    * ...
 </v-clicks>
 

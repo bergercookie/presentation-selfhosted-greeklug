@@ -33,9 +33,9 @@ transition: none
 
   ```sh
   for each app; do
-      docker container stop $app
+      docker container pause $app
       restic-backup.sh $app
-      docker container start $app
+      docker container unpause $app
   done
   ```
 

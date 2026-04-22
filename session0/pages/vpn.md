@@ -17,7 +17,7 @@ To do that we
 
 * Use [Tailscale](https://tailscale.com/) to create point-to-point between
     mobile devices and home network.
-* Self-host [Headscale](https://headscale.net/) for Tailscale control node.
+* Self-host [Headscale](https://headscale.net/) as the Tailscale control node.
 * Split DNS configuration
   + If at home, resolve *.srv.bergercookie.dev via the homelab router directly.
   + If away, resolve *.srv.bergercookie.dev forward queries from VPN DNS
@@ -43,12 +43,14 @@ transition: none
   direct iptables usage)
 
 </v-click>
+<v-click>
 
 ## Why _not_ use Tailscale?
 
 * Not trivial to connect to multiple Tailscale networks at the same time (e.g.,
     work and home)
 
+</v-click>
 <v-click>
 
 ## Why self-host Headscale (and not use Tailscale's control node)?

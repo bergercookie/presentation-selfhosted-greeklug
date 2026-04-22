@@ -4,12 +4,12 @@ hideInToc: true
 
 # Homelab?
 
-Your personal software/hardware setup at home to self-host services/apps of your
+Your software/hardware setup to self-host services/apps of your
 choice.
 
 This includes:
 
-* Hardware: computer, NAS, router, network setup, etc.
+* Hardware: compute, NAS, network equipment (router, switches, etc.), etc.
 * Software: OS, containerization, reverse proxy, VPN, DNS, apps, etc.
 
 ---

@@ -9,10 +9,17 @@ transition: none
 - Access apps via HTTPS - secure comms 🔒
 - Avoid pesky "Not Secure" warnings in browsers
 
-## Requirements
+## Requirements - Restrictions
 
 * Apps not publicly accessible - only at home or via VPN
 * Consistent access - same name whether at home or via VPN
+
+
+<!--
+
+* Have to rent a public domain, e.g., `bergercookie.dev`
+
+-->
 
 ---
 transition: none

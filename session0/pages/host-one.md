@@ -11,6 +11,24 @@ Ubuntu server up and running, how do you host a new app?
 -->
 
 ---
+hideInToc: true
+layoutClass: gap-8
+transition: none
+---
+
+# Host [one]{style="color: green;"} app
+
+e.g., [Grocy 🍲](https://grocy.info/)
+
+
+> ERP beyond your fridge - Grocy is a web-based self-hosted groceries &
+> household management solution for your home
+
+<br>
+
+<img src="/assets/grocy-demo.png" alt="Grocy demo" style="width: 100%;">
+
+---
 layout: two-cols-header
 hideInToc: true
 layoutClass: gap-8
@@ -22,13 +40,6 @@ transition: none
 e.g., [Grocy 🍲](https://grocy.info/)
 
 ::left::
-
-<div style="gap: 1rem;">
-
-> ERP beyond your fridge - Grocy is a web-based self-hosted groceries &
-> household management solution for your home
-
-</div>
 
 - Install [`docker` and `docker-compose`](https://docs.docker.com/engine/install/ubuntu/)
 - Create directories to keep the app data and the docker-compose file
