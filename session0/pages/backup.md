@@ -25,9 +25,7 @@ transition: none
 
 # [Backup]{style="color: green;"} homelab app data
 
-* Use [restic](https://restic.net)
-    + Backup to NAS
-    + Also backup to cloud storage (Google drive) using `rclone` as restic
+* Use [restic](https://restic.net): Backup to NAS + backup to cloud storage (Google drive) using `rclone` as restic
         backend
 * Run in docker container, using periodic scheduler in each homelab server
 

@@ -7,7 +7,7 @@ layout: section
 Ubuntu server up and running, how do you host a new app?
 
 <!--
-* You have installed a fresh Ubuntu server on your computer of choice, now what?
+* Έχετε εγκαταστήσει έναν φρέσκο Ubuntu server στον υπολογιστή της επιλογής σας, και τώρα;
 -->
 
 ---

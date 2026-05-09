@@ -38,7 +38,7 @@ transition: none
 <v-click>
 
 * Point-to-point communication (no added latency, no single point of failure)
-* Easy to add new nodes to the network (no need to exchange private keys)
+* Easy to add new nodes to the network (no need to move private keys etc.)
 * Good tooling, UI to manage nodes, users, and apply access control (no need for
   direct iptables usage)
 
@@ -58,7 +58,7 @@ transition: none
 </v-click>
 <v-click>
 
-If in the free tier
+If in the Tailscale free tier
 
 * Restrictions on the number of users and devices (i.e., cannot give to friends
     and family)

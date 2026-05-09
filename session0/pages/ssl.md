@@ -37,18 +37,3 @@ hideInToc: true
 />
 </div>
 
-
----
-hideInToc: true
----
-
-# Secure communication using [SSL certificates]{style="color: green;"}
-
-<div v-click class="flex flex-col items-center">
-<Excalidraw
-  drawFilePath="./drawings/ssl1.json"
-  class="w-[1000px]"
-  :darkMode="true"
-  :background="false"
-/>
-</div>
