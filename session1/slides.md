@@ -1,5 +1,8 @@
 ---
 theme: default
+# theme: bricks
+# theme: nord
+colorSchema: light
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 
@@ -51,24 +54,10 @@ hideInToc: true
 
 <Toc text-sm minDepth="1" maxDepth="2" />
 
----
----
-
-# 📚 Book management
----
----
-
-# 📃 Document management / knowledge base
 
 ---
+src: ./scenarios-base.md
 ---
-
-# 🏗️ Homelab infrastructure maintenance
-
----
----
-
-# 🍎 Meal planning / Stock management at home
 
 ---
 transition: fade
@@ -78,38 +67,112 @@ transition: fade
 
 ## Goals
 
-* Cross platform: Watch content (movies, TV series, etc.) across devices, OS-es
-* Convenient, easy-to-use: Provide native or progressive web apps
-* Easy to *download* new content
-* Easy to *share* content with friends and family
+1. Cross platform: Watch content (movies, TV series, etc.) across devices, OS-es
+2. Convenient, easy-to-use: Provide native or progressive web apps
+3. Watch from anywhere
+4. Easy to *download* new content
+5. Easy to *share* content with friends and family
 
 <!--
 
-* Cross platform not only in terms of applications but also in terms of having a
+* Cross platform not only in terms of applications but also in terms of
+    supporting a
     `server - client` model
 
 -->
 
 ---
-layout: image-right
-image:  https://jellyfin.org/assets/images/10.8-home-4a73a92bf90d1eeffa5081201ca9c7bb.png
-backgroundSize: 30em 50%
 transition: fade
 hideInToc: true
 ---
 
 # 📽️ Media server
 
-* Media server: **[Jellyfin](https://jellyfin.org/)**
-* Alternatives: [Plex](https://www.plex.tv/), [Emby](https://emby.media/), [Kodi](https://kodi.tv/)
+<div v-click class="flex flex-col items-center">
+<Excalidraw
+  drawFilePath="./drawings/media-server0.json"
+  class="w-[700px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
+
+---
+transition: fade
+hideInToc: true
+---
+
+# 📽️ Media server
+
+<div class="flex flex-col items-center">
+<Excalidraw
+  drawFilePath="./drawings/media-server1.json"
+  class="w-[700px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
+
+---
+transition: fade
+hideInToc: true
+---
+
+# 📽️ Media server
+
+<div class="flex flex-col items-center">
+<Excalidraw
+  drawFilePath="./drawings/media-server2.json"
+  class="w-[700px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
 
 <!--
 
-* Plex: gets increasingly _less_ free and _less_ open-source
-* Emby: father of Jellyfin before it changed its license and became closed-source in ~2018
-* Kodi: Not really a media-server per se but highly configurable so you could
-  use it as one. Not as user-friendly and robust as JF though. can still use it
-  as JF client
+* Don't self-host the notifiers
+  + If anything goes wrong (even with other homelab functionalities) or if
+    you've forgotten to sign in VPN, you still get notifications
+  + Get utility email from google + app-specific password
+* Radarr, Sonarr, etgc. are too technical for users. Use `Jellyseerr`, it's
+    simpler and prettier.
+* Include prowlarr alongside radarr and sonarr to aggregate indexers and make it
+    easier to manage them
+* Use bazarr to automatically download subtitles
+* Radarr, Sonarr, etc. notify Jellyfin to refresh media library when new content
+    is downloaded
+* Radarr, Sonarr, etc. also notify Jellyseerr, in turn notifies the user
+* Use `transmission-openvpn` docker image to run transmission in a VPN container
+    for better security and privacy. Make sure to set up proper volume mounts to
+    access downloaded content and configuration files.
+-->
+
+---
+src: ./scenarios-base.md
+---
+
+---
+transition: fade
+hideInToc: true
+---
+
+# 📚 Document management / knowledge base
+
+<div class="flex flex-col items-center">
+<Excalidraw
+  drawFilePath="./drawings/kb0.json"
+  class="w-[650px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
+
+
+<!--
+
+Βασική υπόθεση: Να μπορείτε να κάνετε τα εξής μόνοι σας με υπηρεσίες στο δικό
+σας homelab
 
 -->
 
@@ -118,124 +181,129 @@ transition: fade
 hideInToc: true
 ---
 
-# 📽️ Media server - Why Jellyfin?
+# 📚 Document management / knowledge base
 
-Convenient, easy-to-use: Provide native or progressive web apps
+<div class="flex flex-col items-center">
+<Excalidraw
+  drawFilePath="./drawings/kb1.json"
+  class="w-[650px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
 
-TODO
+<!--
 
----
-transition: fade
-hideInToc: true
----
+* calibre-web is just a nice Web UI on top of calibre's ebook management
+    functionalities.
 
-# 📽️ Media server - Why Jellyfin?
+* Kavita is more for manga and comics, but you can still use it for ebooks. It
+  has more features and it's better maintained. Can't really import your calibre
+  library
 
-I'd like to download "Metropolis (1927)"
+  * Stores your progress/page for each book
 
-* Use a torrent client (e.g., Transmission) - download to Jellyfin-shared
-    storage.
-  + ❌Have to manually search for the torrent, download it, and move it to the
-      right folder for JF
-  + ❌Have to explicitly refresh JF library
+* Clear winners in all but the knowledge base / note-taking category, where
+  there are multiple good options
 
-* Use [Radarr](https://radarr.video/)
-  + ✅Link to torrent indexes
-  + ✅Link to torrent client
-  + ✅Search for movie in Radarr, click "Download"
-  + ❌Too technical (have to specify acceptable quality, codecs, etc.)
-
-* 
-
-
----
-transition: fade
-hideInToc: true
----
-
-# 📽️ Media server - Why Jellyfin?
-
-Easy to *download* new content
+  * I choose trilium because
+    + Server/client architecture, PWA
+    + rich features
+    + no tags, but, same note in multiple paths
+    + extensible with JS/TS
+    + Journaling
+    + Support for templates
+    + Decent support on android
+-->
 
 ---
 transition: fade
 hideInToc: true
 ---
 
-# 📽️ Media server - Why Jellyfin?
+# 📚 Document management / knowledge base
 
-Easy to *share* content with friends and family
+<div class="flex flex-col items-center">
+<Excalidraw
+  drawFilePath="./drawings/kb2.json"
+  class="w-[650px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
+
 
 ---
 transition: fade
 hideInToc: true
 ---
 
-# 📽️ Media server - the full picture
+# 📚 Document management / knowledge base
 
-```mermaid {scale: 0.57}
-flowchart LR
-    %% User Nodes
-    User(["👤 User"])
-
-
-    %% Request System
-    subgraph Frontend
-        Jellyseerr[<b><p style="color: red">Jellyseerr</p></b><br/>Request Management]
-    end
-
-    %% Media Management
-    subgraph Automation
-        Radarr[<b><p style="color: red">Radarr</p></b><br/>Movie]
-        Sonarr[<b><p style="color: red">Sonarr</p></b><br/>TV Show]
-    end
-
-    %% Backend Infrastructure
-    subgraph Backend
-        Indexers[(<b><p style="color: red">Indexers</p></b><br/>e.g., Prowlarr)]
-        DownloadClient[<b><p style="color: red">Download Client</p></b><br/>e.g., Transmission, SABnzbd]
-    end
-
-    %% Media Player
-    subgraph Media Server
-        Jellyfin[<b><p style="color: red">Jellyfin</p></b><br/>Media Playback]
-    end
-
-    %% Standalone Storage (Pushed to the right)
-    Storage[(Media Storage)]
-
-    %% User Interactions
-    User -- 1. Requests --> Jellyseerr
-    User -- 8. Watches --> Jellyfin
-
-    %% Request Flow
-    Jellyseerr -- 2a. Movie Req --> Radarr
-    Jellyseerr -- 2b. TV Req --> Sonarr
-    Jellyseerr <--> |Syncs Auth/Lib| Jellyfin
-
-    %% Search Flow
-    Radarr -- 3. Searches --> Indexers
-    Sonarr -- 3. Searches --> Indexers
-
-    %% Download Flow
-    Radarr -- 4. Sends Torrent --> DownloadClient
-    Sonarr -- 4. Sends Torrent --> DownloadClient
-    DownloadClient -- 5. Downloads --> Storage
-
-    %% Organization Flow
-    Radarr -- 6. Moves --> Storage
-    Sonarr -- 6. Moves --> Storage
-
-    %% Playback Flow
-    Jellyfin -- 7. Scans --> Storage
-```
+<div class="flex flex-col items-center">
+<Excalidraw
+  drawFilePath="./drawings/kb3.json"
+  class="w-[650px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
 
 ---
+src: ./scenarios-base.md
 ---
 
-# 🔒Password management
+---
+layout: image
+image: /assetes/tika.png
+transition: fade
+---
+
+<!-- # 🏭 Personal productivity -->
+<!---->
+<!-- ```mermaid {scale: 0.85} -->
+<!-- mindmap -->
+<!--   root((Personal productivity)) -->
+<!--     🎯 Task Management -->
+<!--       Vikunja -->
+<!--     ☎️ Contacts and Calendars -->
+<!--       Baikal -->
+<!--         Android contacts <br> DavX5 -->
+<!---->
+<!--       Radicale -->
+<!--         Android calendar <br> DavX5 -->
+<!---->
+<!--     🔑 Password Management -->
+<!--       Vaultwarden -->
+<!--     🥧 Inventory and Household -->
+<!--       Grocy -->
+<!--       Mealie -->
+<!-- ``` -->
+
+<!--
+
+* Υπηρεσίες που χρησιμοποιώ καθημερινά και θεωρώ ως αναπόσπαστο κομμάτι του
+    homelab μου.
+
+-->
 
 ---
+src: ./scenarios-base.md
 ---
 
-# 💡 Productivity
+
+---
+transition: fade
+---
+
+# 🏗️ Homelab infrastructure maintenance
+
+---
+src: ./scenarios-base.md
+---
+
+---
+transision: fade
+---
+
+# 🛠️ Utilities - lightning round
