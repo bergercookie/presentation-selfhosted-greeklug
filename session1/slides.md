@@ -389,49 +389,49 @@ title: 🛠️ Utilities - lightning round
 
 <div v-click style="display: flex; flex-direction: column; align-items: center;">
   <p style="font-size: 1.3em;">Store photos & videos</p>
-  <img src="/public/assets/immich.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <img src="/public/assets/immich.svg" style="border-radius: 12px; width: 50px; height: 50px;" />
   <p><strong style="font-size: 1.5em;">Immich</strong></p>
 </div>
 
 <div v-click style="display: flex; flex-direction: column; align-items: center;">
   <p style="font-size: 1.3em;">Spreadsheet-database hybrid</p>
-  <img src="/public/assets/grist.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <img src="/public/assets/grist.svg" style="border-radius: 12px; width: 50px; height: 50px;" />
   <p><strong style="font-size: 1.5em;">Grist</strong></p>
 </div>
 
 <div v-click style="display: flex; flex-direction: column; align-items: center;">
   <p style="font-size: 1.3em;">All-in-one PDF toolkit</p>
-  <img src="/public/assets/stirling-pdf.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <img src="/public/assets/stirling-pdf.svg" style="border-radius: 12px; width: 50px; height: 50px;" />
   <p><strong style="font-size: 1.5em;">Stirling PDF</strong></p>
 </div>
 
 <div v-click style="display: flex; flex-direction: column; align-items: center;">
   <p style="font-size: 1.3em;">Track baby milestones</p>
-  <img src="/public/assets/baby-buddy.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <img src="/public/assets/baby-buddy.svg" style="border-radius: 12px; width: 50px; height: 50px;" />
   <p><strong style="font-size: 1.5em;">Baby Buddy</strong></p>
 </div>
 
 <div v-click style="display: flex; flex-direction: column; align-items: center;">
   <p style="font-size: 1.3em;">Personal finance manager</p>
-  <img src="/public/assets/firefly-iii.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <img src="/public/assets/firefly-iii.svg" style="border-radius: 12px; width: 50px; height: 50px;" />
   <p><strong style="font-size: 1.5em;">Firefly III</strong></p>
 </div>
 
 <div v-click style="display: flex; flex-direction: column; align-items: center;">
   <p style="font-size: 1.3em;">Low-latency voice chat</p>
-  <img src="/public/assets/mumble.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <img src="/public/assets/mumble.svg" style="border-radius: 12px; width: 50px; height: 50px;" />
   <p><strong style="font-size: 1.5em;">Mumble</strong></p>
 </div>
 
 <div v-click style="display: flex; flex-direction: column; align-items: center;">
   <p style="font-size: 1.3em;">Minimalist RSS reader</p>
-  <img src="/public/assets/miniflux.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <img src="/public/assets/miniflux.svg" style="border-radius: 12px; width: 50px; height: 50px;" />
   <p><strong style="font-size: 1.5em;">Miniflux</strong></p>
 </div>
 
 <div v-click style="display: flex; flex-direction: column; align-items: center;">
   <p style="font-size: 1.3em;">Auto-download podcasts</p>
-  <img src="/public/assets/podfetch.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <img src="/public/assets/podfetch.svg" style="border-radius: 12px; width: 50px; height: 50px;" />
   <p><strong style="font-size: 1.5em;">Podfetch</strong></p>
 </div>
 

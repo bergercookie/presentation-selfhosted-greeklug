@@ -12,8 +12,14 @@
 <br>
 
 
-<div style="text-align: right;">
-  <h3><b>Questions ? 😕 🤔 🤨</b></h3>
+<div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <img src="/public/assets/qrcode.png" alt="QR code with presentation" width="160px"/>
+    <span style="font-size: 0.9em; color: #555; margin-top: 4px;">Presentation PDF</span>
+  </div>
+  <div style="margin-left: 24px; text-align: right;">
+    <h3><b>Questions ? 😕 🤔 🤨</b></h3>
+  </div>
 </div>
 
 <!--
