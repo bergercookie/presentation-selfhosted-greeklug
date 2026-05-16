@@ -6,9 +6,23 @@
 4. <Link to="homelab-infra" title="🏗️ Homelab infrastructure maintenance"/>
 5. <Link to="utilities" title="🛠️ Utilities - lightning round"/>
 
+<br>
+<br>
+<br>
+<br>
+
+
+<div style="text-align: right;">
+  <h3><b>Questions ? 😕 🤔 🤨</b></h3>
+</div>
+
 <!--
 
-We stop after every session, take questions and then resume to the next one
+Lay out the rules:
+
+* 5 sections
+* We stop after every section, take questions and then resume to the next one
+* At the end we sum it up
 
 -->
 

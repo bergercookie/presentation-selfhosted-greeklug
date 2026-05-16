@@ -48,6 +48,7 @@ hideInToc: true
 layout: image-right
 image: https://www.cnet.com/a/img/resize/d07ee1249a5dbddf4d06f9275d6354bf91fda6a1/hub/2017/01/14/6d8103f7-a52d-46de-98d0-56d0e9d79804/se7en.png?auto=webp&width=1920
 hideInToc: true
+disabled: true
 ---
 
 # What's in the ~~box~~ presentation?
@@ -98,6 +99,12 @@ hideInToc: true
   :background="false"
 />
 </div>
+
+<!--
+
+Πώς μεταφράζω εγώ αυτές τις προδιαγραφές
+
+-->
 
 ---
 transition: fade
@@ -162,7 +169,7 @@ hideInToc: true
 routeAlias: knowledge-base
 ---
 
-# 📚 Document management / knowledge base
+# 📚 Documents / knowledge base
 
 <div class="flex flex-col items-center">
 <Excalidraw
@@ -186,7 +193,7 @@ transition: fade
 hideInToc: true
 ---
 
-# 📚 Document management / knowledge base <sup style="font-size: 0.4em"><a href="https://demo.kavitareader.com">Kavita</a> · <a href="https://trilium.srv.bergercookie.dev">Trilium</a></sup>
+# 📚 Documents / knowledge base <sup style="font-size: 0.4em"><a href="https://demo.kavitareader.com">Kavita</a> · <a href="https://trilium.srv.bergercookie.dev">Trilium</a></sup>
 
 <div class="flex flex-col items-center">
 <Excalidraw
@@ -199,26 +206,22 @@ hideInToc: true
 
 <!--
 
-* calibre-web is just a nice Web UI on top of calibre's ebook management
-    functionalities.
+- Το calibre-web είναι απλά ένα ωραίο Web UI πάνω από το calibre για ebooks.
 
-* Kavita is more for manga and comics, but you can still use it for ebooks. It
-  has more features and it's better maintained. Can't really import your calibre
-  library
+- Το Kavita είναι κυρίως για manga/comics, αλλά δουλεύει και για ebooks. Έχει περισσότερα features, καλύτερη συντήρηση, δεν κάνει import τη βιβλιοθήκη calibre.
 
-  * Stores your progress/page for each book
+  - Αποθηκεύει πρόοδο/σελίδα ανά βιβλίο.
 
-* Clear winners in all but the knowledge base / note-taking category, where
-  there are multiple good options
+- Ξεκάθαροι νικητές σε όλα εκτός από knowledge base/σημειώσεις, όπου υπάρχουν πολλές καλές επιλογές.
 
-  * I choose trilium because
-    + Server/client architecture, PWA
-    + rich features
-    + no tags, but, same note in multiple paths
-    + extensible with JS/TS
+  - Επέλεξα το trilium γιατί:
+    + Server/client, PWA
+    + Πλούσια χαρακτηριστικά
+    + Όχι tags, αλλά ίδια σημείωση σε πολλά paths
+    + Επεκτάσιμο με JS/TS
     + Journaling
-    + Support for templates
-    + Decent support on android
+    + Templates
+    + Καλή υποστήριξη σε android
 -->
 
 ---
@@ -226,7 +229,7 @@ transition: fade
 hideInToc: true
 ---
 
-# 📚 Document management / knowledge base <sup style="font-size: 0.4em"><a href="https://demo.kavitareader.com">Kavita</a> · <a href="https://trilium.srv.bergercookie.dev">Trilium</a></sup>
+# 📚 Documents / knowledge base <sup style="font-size: 0.4em"><a href="https://demo.kavitareader.com">Kavita</a> · <a href="https://paperless.srv.bergercookie.dev/dashboard">Paperless</a> · <a href="https://trilium.srv.bergercookie.dev">Trilium</a></sup>
 
 <div class="flex flex-col items-center">
 <Excalidraw
@@ -243,7 +246,7 @@ transition: fade
 hideInToc: true
 ---
 
-# 📚 Document management / knowledge base <sup style="font-size: 0.4em"><a href="https://demo.kavitareader.com">Kavita</a> · <a href="https://trilium.srv.bergercookie.dev">Trilium</a></sup>
+# 📚 Documents / knowledge base <sup style="font-size: 0.4em"><a href="https://demo.kavitareader.com">Kavita</a> · <a href="https://paperless.srv.bergercookie.dev/dashboard">Paperless</a> · <a href="https://trilium.srv.bergercookie.dev">Trilium</a></sup>
 
 <div class="flex flex-col items-center">
 <Excalidraw
@@ -299,6 +302,12 @@ transition: fade
 />
 </div>
 
+<!--
+* Caldav
+* Cardav
+
+Παρόμοια προτόκολα για interoperability μεταξύ servers και clients
+-->
 
 ---
 hideInToc: true
@@ -311,7 +320,7 @@ transition: fade
 routeAlias: homelab-infra
 ---
 
-# 🏗️ Homelab infrastructure maintenance
+# 🏗️ Homelab infrastructure
 
 * Enable secure and convenient access to homelab services
 * Receive timely notifications for service security updates (esp. if
@@ -337,7 +346,7 @@ hideInToc: true
 transition: fade
 ---
 
-# 🏗️ Homelab infrastructure maintenance
+# 🏗️ Homelab infrastructure
 
 <div class="flex flex-col items-center">
 <Excalidraw
@@ -353,7 +362,7 @@ hideInToc: true
 transition: fade
 ---
 
-# 🏗️ Homelab infrastructure maintenance <sup style="font-size: 0.4em"><a href="https://srv.bergercookie.dev">Homepage</a> · <a href="https://dockge.srv.bergercookie.dev">Dockge</a> · <a href="https://files.srv.bergercookie.dev">Files</a></sup>
+# 🏗️ Homelab infrastructure <sup style="font-size: 0.4em"><a href="https://srv.bergercookie.dev">Homepage</a> · <a href="https://dockge.srv.bergercookie.dev">Dockge</a> · <a href="https://files.srv.bergercookie.dev">Files</a> · <a href="https://openobserve.srv.bergercookie.dev">OpenObserve</a> · <a href="https://uptime.srv.bergercookie.dev">Uptime Kuma</a></sup>
 
 <div class="flex flex-col items-center">
 <Excalidraw
@@ -371,6 +380,7 @@ src: ./scenarios-base.md
 
 ---
 routeAlias: utilities
+title: 🛠️ Utilities - lightning round
 ---
 
 # 🛠️ Utilities - lightning round <sup style="font-size: 0.4em"><a href="https://demo.immich.app">Immich</a> · <a href="https://docs.getgrist.com">Grist</a> · <a href="https://stirlingpdf.io">Stirling PDF</a> · <a href="https://demo.firefly-iii.org">Firefly III</a> · <a href="https://podfetch.srv.bergercookie.dev">Podfetch</a></sup>
@@ -436,7 +446,7 @@ src: ./scenarios-base.md
 layout: cover
 ---
 
-# Wrap-up - the big picture
+# 🧠 Wrap-up - the big picture
 
 ---
 ---
@@ -455,3 +465,12 @@ layout: cover
 * Ξεκινήστε από κάποιο απλό service, εξοικειωθείτε με αυτό, δείτε τα προβλήματα που προκύπτουν, λύστε τα, προσθέστε και άλλα.
 
 -->
+
+---
+layout: image
+image: /assets/self-host-all.jpg
+backgroundSize: 50%
+hideInToc: true
+---
+
+# <div style="color: black">The end 👋👋👋</div>
