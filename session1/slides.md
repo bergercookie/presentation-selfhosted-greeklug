@@ -255,30 +255,32 @@ src: ./scenarios-base.md
 
 ---
 layout: image
-image: /assetes/tika.png
-transition: fade
+image: /assets/productivity-background.svg
 ---
 
-<!-- # 🏭 Personal productivity -->
-<!---->
-<!-- ```mermaid {scale: 0.85} -->
-<!-- mindmap -->
-<!--   root((Personal productivity)) -->
-<!--     🎯 Task Management -->
-<!--       Vikunja -->
-<!--     ☎️ Contacts and Calendars -->
-<!--       Baikal -->
-<!--         Android contacts <br> DavX5 -->
-<!---->
-<!--       Radicale -->
-<!--         Android calendar <br> DavX5 -->
-<!---->
-<!--     🔑 Password Management -->
-<!--       Vaultwarden -->
-<!--     🥧 Inventory and Household -->
-<!--       Grocy -->
-<!--       Mealie -->
-<!-- ``` -->
+# 🏭 <span style="color: black">Personal productivity</span>
+
+```mermaid {scale: 0.85}
+mindmap
+  root((Personal productivity))
+    🎯 Task Management
+      Vikunja
+    ☎️ Contacts and Calendars
+      Baikal
+        Android contacts <br> DavX5
+
+      Radicale
+        Android calendar <br> DavX5
+
+    🔑 Password Management
+      Vaultwarden
+    🥧 Inventory and Household
+      Grocy
+      Mealie
+
+    Service visibility
+      Homepage
+```
 
 <!--
 
@@ -298,6 +300,55 @@ transition: fade
 
 # 🏗️ Homelab infrastructure maintenance
 
+* Enable secure and convenient access to homelab services
+* Receive timely notifications for service security updates (esp. if
+  public-facing)
+* Version-control homelab config files
+* Monitor logs, start and stop containers, etc.
+* Monitor service and computer uptimes
+* Monitor usage stats (CPU, RAM, disk, network) and logs
+* Access files/directories in homelab PC
+
+<!--
+
+* Caddy for reverse proxying (with subdomain naming) + TLS certificates
+* Tailscale for VPN
+* diun - only enable for security updates - otherwise too much noise if you have
+    many services
+* Using file browser, should probably go for `copyparty` instead
+
+-->
+
+---
+transition: fade
+---
+
+# 🏗️ Homelab infrastructure maintenance
+
+<div class="flex flex-col items-center">
+<Excalidraw
+  drawFilePath="./drawings/infra0.json"
+  class="w-[730px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
+
+---
+transition: fade
+---
+
+# 🏗️ Homelab infrastructure maintenance
+
+<div class="flex flex-col items-center">
+<Excalidraw
+  drawFilePath="./drawings/infra1.json"
+  class="w-[730px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
+
 ---
 src: ./scenarios-base.md
 ---
@@ -307,3 +358,9 @@ transision: fade
 ---
 
 # 🛠️ Utilities - lightning round
+
+---
+layout: image
+image: /assets/overall.svg
+---
+
