@@ -1,13 +1,10 @@
----
----
-
 # 📣 Scenarios to discuss
 
-1. 📽️ Media server
-2. 📚 Document management / knowledge base
-3. 🏭 Personal productivity
-4. 🏗️ Homelab infrastructure maintenance
-5. 🛠️ Utilities - lightning round
+1. <Link to="media-server" title="📽️ Media server"/>
+2. <Link to="knowledge-base" title="📚 Document management / knowledge base"/>
+3. <Link to="personal-productivity" title="🏭 Personal productivity"/>
+4. <Link to="homelab-infra" title="🏗️ Homelab infrastructure maintenance"/>
+5. <Link to="utilities" title="🛠️ Utilities - lightning round"/>
 
 <!--
 

@@ -57,10 +57,12 @@ hideInToc: true
 
 ---
 src: ./scenarios-base.md
+routeAlias: scenarios-base
 ---
 
 ---
 transition: fade
+routeAlias: media-server
 ---
 
 # 📽️ Media server
@@ -118,7 +120,8 @@ transition: fade
 hideInToc: true
 ---
 
-# 📽️ Media server
+# 📽️ Media server <sup style="font-size: 0.4em"><a href="https://demo.jellyfin.org/stable">Jellyfin</a></sup>
+
 
 <div class="flex flex-col items-center">
 <Excalidraw
@@ -149,12 +152,14 @@ hideInToc: true
 -->
 
 ---
+hideInToc: true
 src: ./scenarios-base.md
 ---
 
 ---
 transition: fade
 hideInToc: true
+routeAlias: knowledge-base
 ---
 
 # 📚 Document management / knowledge base
@@ -162,7 +167,7 @@ hideInToc: true
 <div class="flex flex-col items-center">
 <Excalidraw
   drawFilePath="./drawings/kb0.json"
-  class="w-[650px]"
+  class="w-[700px]"
   :darkMode="false"
   :background="false"
 />
@@ -181,12 +186,12 @@ transition: fade
 hideInToc: true
 ---
 
-# 📚 Document management / knowledge base
+# 📚 Document management / knowledge base <sup style="font-size: 0.4em"><a href="https://demo.kavitareader.com">Kavita</a> · <a href="https://trilium.srv.bergercookie.dev">Trilium</a></sup>
 
 <div class="flex flex-col items-center">
 <Excalidraw
   drawFilePath="./drawings/kb1.json"
-  class="w-[650px]"
+  class="w-[700px]"
   :darkMode="false"
   :background="false"
 />
@@ -221,12 +226,12 @@ transition: fade
 hideInToc: true
 ---
 
-# 📚 Document management / knowledge base
+# 📚 Document management / knowledge base <sup style="font-size: 0.4em"><a href="https://demo.kavitareader.com">Kavita</a> · <a href="https://trilium.srv.bergercookie.dev">Trilium</a></sup>
 
 <div class="flex flex-col items-center">
 <Excalidraw
   drawFilePath="./drawings/kb2.json"
-  class="w-[650px]"
+  class="w-[700px]"
   :darkMode="false"
   :background="false"
 />
@@ -238,64 +243,72 @@ transition: fade
 hideInToc: true
 ---
 
-# 📚 Document management / knowledge base
+# 📚 Document management / knowledge base <sup style="font-size: 0.4em"><a href="https://demo.kavitareader.com">Kavita</a> · <a href="https://trilium.srv.bergercookie.dev">Trilium</a></sup>
 
 <div class="flex flex-col items-center">
 <Excalidraw
   drawFilePath="./drawings/kb3.json"
-  class="w-[650px]"
+  class="w-[700px]"
   :darkMode="false"
   :background="false"
 />
 </div>
 
 ---
+hideInToc: true
 src: ./scenarios-base.md
 ---
 
 ---
-layout: image
-image: /assets/productivity-background.svg
+transition: fade
+routeAlias: personal-productivity
 ---
 
-# 🏭 <span style="color: black">Personal productivity</span>
+# 🏭 Personal productivity
 
-```mermaid {scale: 0.85}
-mindmap
-  root((Personal productivity))
-    🎯 Task Management
-      Vikunja
-    ☎️ Contacts and Calendars
-      Baikal
-        Android contacts <br> DavX5
-
-      Radicale
-        Android calendar <br> DavX5
-
-    🔑 Password Management
-      Vaultwarden
-    🥧 Inventory and Household
-      Grocy
-      Mealie
-
-    Service visibility
-      Homepage
-```
+<div class="flex flex-col items-center">
+<Excalidraw
+  drawFilePath="./drawings/prod0.json"
+  class="w-[700px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
 
 <!--
 
-* Υπηρεσίες που χρησιμοποιώ καθημερινά και θεωρώ ως αναπόσπαστο κομμάτι του
-    homelab μου.
+* Υπηρεσίες που θα ωφεληθείτε από το να είναι self-hosted, για λόγους απορρήτου,
+  ασφάλειας, ευκολίας
+* Χρησιμοποιώ καθημερινά, αναπόσπαστο μέρος του homelab μου.
 
 -->
 
 ---
+hideInToc: true
+transition: fade
+---
+
+# 🏭 Personal productivity <sup style="font-size: 0.4em"><a href="https://demo.firefly-iii.org">Firefly III</a> · <a href="https://babybuddy.srv.bergercookie.dev">Baby Buddy</a> · <a href="https://miniflux.srv.bergercookie.dev">Miniflux</a></sup>
+
+<div class="flex flex-col items-center">
+<Excalidraw
+  drawFilePath="./drawings/prod1.json"
+  class="w-[700px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
+
+
+---
+hideInToc: true
 src: ./scenarios-base.md
 ---
 
 
 ---
 transition: fade
+routeAlias: homelab-infra
 ---
 
 # 🏗️ Homelab infrastructure maintenance
@@ -320,6 +333,7 @@ transition: fade
 -->
 
 ---
+hideInToc: true
 transition: fade
 ---
 
@@ -328,39 +342,116 @@ transition: fade
 <div class="flex flex-col items-center">
 <Excalidraw
   drawFilePath="./drawings/infra0.json"
-  class="w-[730px]"
+  class="w-[700px]"
   :darkMode="false"
   :background="false"
 />
 </div>
 
 ---
+hideInToc: true
 transition: fade
 ---
 
-# 🏗️ Homelab infrastructure maintenance
+# 🏗️ Homelab infrastructure maintenance <sup style="font-size: 0.4em"><a href="https://srv.bergercookie.dev">Homepage</a> · <a href="https://dockge.srv.bergercookie.dev">Dockge</a> · <a href="https://files.srv.bergercookie.dev">Files</a></sup>
 
 <div class="flex flex-col items-center">
 <Excalidraw
   drawFilePath="./drawings/infra1.json"
-  class="w-[730px]"
+  class="w-[700px]"
   :darkMode="false"
   :background="false"
 />
 </div>
 
 ---
+hideInToc: true
 src: ./scenarios-base.md
 ---
 
 ---
-transision: fade
+routeAlias: utilities
 ---
 
-# 🛠️ Utilities - lightning round
+# 🛠️ Utilities - lightning round <sup style="font-size: 0.4em"><a href="https://demo.immich.app">Immich</a> · <a href="https://docs.getgrist.com">Grist</a> · <a href="https://stirlingpdf.io">Stirling PDF</a> · <a href="https://demo.firefly-iii.org">Firefly III</a> · <a href="https://podfetch.srv.bergercookie.dev">Podfetch</a></sup>
+
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; text-align: center; align-items: center;">
+
+<div v-click style="display: flex; flex-direction: column; align-items: center;">
+  <p style="font-size: 1.3em;">Store photos & videos</p>
+  <img src="/public/assets/immich.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <p><strong style="font-size: 1.5em;">Immich</strong></p>
+</div>
+
+<div v-click style="display: flex; flex-direction: column; align-items: center;">
+  <p style="font-size: 1.3em;">Spreadsheet-database hybrid</p>
+  <img src="/public/assets/grist.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <p><strong style="font-size: 1.5em;">Grist</strong></p>
+</div>
+
+<div v-click style="display: flex; flex-direction: column; align-items: center;">
+  <p style="font-size: 1.3em;">All-in-one PDF toolkit</p>
+  <img src="/public/assets/stirling-pdf.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <p><strong style="font-size: 1.5em;">Stirling PDF</strong></p>
+</div>
+
+<div v-click style="display: flex; flex-direction: column; align-items: center;">
+  <p style="font-size: 1.3em;">Track baby milestones</p>
+  <img src="/public/assets/baby-buddy.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <p><strong style="font-size: 1.5em;">Baby Buddy</strong></p>
+</div>
+
+<div v-click style="display: flex; flex-direction: column; align-items: center;">
+  <p style="font-size: 1.3em;">Personal finance manager</p>
+  <img src="/public/assets/firefly-iii.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <p><strong style="font-size: 1.5em;">Firefly III</strong></p>
+</div>
+
+<div v-click style="display: flex; flex-direction: column; align-items: center;">
+  <p style="font-size: 1.3em;">Low-latency voice chat</p>
+  <img src="/public/assets/mumble.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <p><strong style="font-size: 1.5em;">Mumble</strong></p>
+</div>
+
+<div v-click style="display: flex; flex-direction: column; align-items: center;">
+  <p style="font-size: 1.3em;">Minimalist RSS reader</p>
+  <img src="/public/assets/miniflux.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <p><strong style="font-size: 1.5em;">Miniflux</strong></p>
+</div>
+
+<div v-click style="display: flex; flex-direction: column; align-items: center;">
+  <p style="font-size: 1.3em;">Auto-download podcasts</p>
+  <img src="/public/assets/podfetch.svg" style="border-radius: 12px; width: 80px; height: 80px;" />
+  <p><strong style="font-size: 1.5em;">Podfetch</strong></p>
+</div>
+
+</div>
 
 ---
-layout: image
-image: /assets/overall.svg
+hideInToc: true
+src: ./scenarios-base.md
 ---
 
+---
+layout: cover
+---
+
+# Wrap-up - the big picture
+
+---
+---
+
+<div class="flex flex-col items-center">
+<Excalidraw
+  drawFilePath="./drawings/overall.json"
+  class="w-[950px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
+
+<!--
+
+* Ξεκινήστε από κάποιο απλό service, εξοικειωθείτε με αυτό, δείτε τα προβλήματα που προκύπτουν, λύστε τα, προσθέστε και άλλα.
+
+-->
