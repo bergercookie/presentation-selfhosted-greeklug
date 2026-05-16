@@ -160,6 +160,53 @@ hideInToc: true
 
 ---
 hideInToc: true
+layout: two-cols-header
+---
+
+
+# 📽️ Media server for friends and family
+
+::left::
+
+* ACL rules at Headscale -> only access `192.168.33.22`
+* Separate DNS entries
+  + `*.srv.bergercookie.dev`
+  + `*.friends.bergercookie.dev`
+* Separate Caddy instance for friends
+* New IP specifically for friends' services
+
+<img src="/public/assets/friends-homepage.png" style="max-width: 100%; border-radius: 12px; background-size: 50%;" />
+
+::right::
+
+```yaml
+services:
+  friends-proxy:
+    build: .
+    container_name: friends-caddy
+    networks:
+      macvlan_net:
+        ipv4_address: 192.168.33.22
+    ...
+
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: friends-homepage
+
+networks:
+  macvlan_net:
+    driver: macvlan
+    driver_opts:
+      parent: enp2s0
+    ipam:
+      config:
+        - subnet: 192.168.33.0/24   # Your network subnet
+          gateway: 192.168.33.1     # Your network gateway
+          ip_range: 192.168.33.0/24 # Range of IPs Docker can use (adjust as needed)
+```
+
+---
+hideInToc: true
 src: ./scenarios-base.md
 ---
 
@@ -193,7 +240,7 @@ transition: fade
 hideInToc: true
 ---
 
-# 📚 Documents / knowledge base <sup style="font-size: 0.4em"><a href="https://demo.kavitareader.com">Kavita</a> · <a href="https://trilium.srv.bergercookie.dev">Trilium</a></sup>
+# 📚 Documents / knowledge base <sup style="font-size: 0.4em"><a href="https://demo.kavitareader.com">Kavita</a> · <a href="https://paperless.srv.bergercookie.dev/dashboard">Paperless</a> · <a href="https://trilium.srv.bergercookie.dev">Trilium</a></sup>
 
 <div class="flex flex-col items-center">
 <Excalidraw
@@ -467,10 +514,21 @@ layout: cover
 -->
 
 ---
-layout: image
-image: /assets/self-host-all.jpg
-backgroundSize: 50%
+layout: two-cols
 hideInToc: true
 ---
 
 # <div style="color: black">The end 👋👋👋</div>
+
+## Contact info
+
+Get in touch to discuss homelabs, or just to say hi!
+
+* <a href="mailto:nickkouk@gmail.com">nickkouk@gmail.com</a>
+* [https://bergercookie.dev](https://bergercookie.dev)
+* [https://github.com/bergercookie](https://github.com/bergercookie)
+
+::right::
+
+<img src="/public/assets/self-host-all.jpg" style="max-width: 100%; border-radius: 12px; background-size: 50%;" />
+
