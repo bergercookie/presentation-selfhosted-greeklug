@@ -26,7 +26,7 @@ e.g., [Grocy 🍲](https://grocy.info/)
 
 <br>
 
-<img src="/assets/grocy-demo.png" alt="Grocy demo" style="width: 100%;">
+<img src="/public/assets/grocy-demo.png" alt="Grocy demo" style="width: 100%;">
 
 ---
 layout: two-cols-header
@@ -100,7 +100,7 @@ transition: none
 <br>
 
 <v-click>
-<img src="/assets/grocy-up.png" alt="Grocy up" style="width: 100%;">
+<img src="/public/assets/grocy-up.png" alt="Grocy up" style="width: 100%;">
 </v-click>
 
 <br>
